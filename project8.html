@@ -1,0 +1,50 @@
+<html>
+   <head>
+         <title>JavaScript functions </title>
+         <style>
+            body{
+                background-size:cover;
+                background-repeat:no repeat;
+                        }
+                body{
+                    background-image: url("coffee5.jpg");
+                }
+                h1{text-align: center;
+                
+                }
+                h2{
+                    text-align: center;
+                }
+                
+            </style>
+
+      </head>      
+      <script>
+         // User Validations
+ function loginValidation() {
+             // Ramesh
+   var uname = document.myform.username.value;
+              //Ramesh@123
+   var password = document.myform.password.value;
+             if(uname==null || uname=="") {
+               alert("Name cant be blank")
+               return false;  
+            } else if (password.length<6){
+               alert("Password Must be 6 letters")
+               return false;
+            }  
+            return true                 
+         }           
+      </script>
+      </head>
+      <body>
+          <h2>Login Page</h2>  
+<form name="myform" action="LoginSuccess.html" 	onsubmit="return loginValidation(this)">
+ 
+<h1>User Name : <input type="text" name="username"> <br></h1>
+<h1>Password :  <input type="password" name="password"> <br></h1>
+         <h1><input type="submit" value="Submit"> </h1>    
+          
+        </form>
+   </body>
+</html>
